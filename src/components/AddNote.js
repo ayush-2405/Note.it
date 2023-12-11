@@ -31,7 +31,7 @@ const AddNote = ({ handleAddNote }) => {
 					{characterLimit - noteText.length} Remaining
 				</small>
 				<button className='save' onClick={handleSaveClick}>
-					Save
+					Add Note
 				</button>
 			</div>
 		</div>
