@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* background-color: #fef68a; */
+}
+.top{
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+}
+.icons{
+	display: flex;
+	gap: 1rem;
+}
+.dark-mode {
+	background-color: black;
+  	transition: background-color 0.3s linear;
+}
+/* .dark-mode .note:hover{
+  box-shadow: 0 0 11px rgb(255, 255, 255); 
+} */
+.dark-mode .note.new:hover{
+  box-shadow: 0 0 20px rgb(255, 255, 255); 
+}
+.dark-mode h1 {
+	color: white;
+}
+
+.container {
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+	/* background-color: #67d7cc; */
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(350px, 1fr)
+	);
+}
+
+.note.new {
+	background-color: #67d7cc;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #67d7cc;
+}
+
+textarea:focus {
+	outline: none;
+}
+.note.new:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+/* textarea:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+} */
+
+.save {
+	background-color: #e1e1e1;
+	border: none;
+	border-radius: 15px;
+	padding: 10px 10px 10px 10px;
+}
+.switch{
+	border: none;
+	border-radius: 20px;
+	padding: 0;	
+}
+
+.save:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
+
+.note {
+	background-color: #fef68a;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+.edit-icon{
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	margin-top: 1%;
+	margin-left: 20%;
+	min-width: 50%;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+.search:hover{
+  padding: 7px;
+  box-shadow: 0 0 10px rgba(33,33,33,.2);
+  transition: all 0.2s linear; 
+}
+.dark-mode .search:hover{
+  padding: 7px;
+  box-shadow: 0 0 10px whitesmoke;
+  transition: all 0.2s linear;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
+
