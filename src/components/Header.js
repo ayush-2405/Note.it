@@ -3,7 +3,7 @@ import MaterialUISwitch from './switch';
 
 const Header = ({ handleToggleDarkMode }) => {
 	return (
-		<div className='header'>
+		<div className='header head'>
 			
 			<search/>
 			<button
